@@ -1,0 +1,6 @@
+faster-whisper>=0.7.0
+sounddevice>=0.4.6
+numpy>=1.24
+torch>=2.0.0
+# NOTE: Install the appropriate torch build for your CUDA version following https://pytorch.org/get-started/locally/
+# ffmpeg is required for audio file transcription (system package). On Windows: https://ffmpeg.org/download.html

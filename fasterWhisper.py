@@ -17,4 +17,5 @@ segments, _ = model.transcribe("audio.mp3", language="en", beam_size=5)
 # print("Detected language '%s' with probability %f" % (info.language, info.language_probability))
 
 for segment in segments:
-    print(segment.txt)
+    text = getattr(segment, 'text', None) or getattr(segment, 'txt', '')
+    print(text.strip())
